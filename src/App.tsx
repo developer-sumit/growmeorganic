@@ -202,6 +202,7 @@ function App() {
           loading={loading}
           className="artworks-table"
           selection={selectedRows}
+          selectionMode="multiple"
           onSelectionChange={(event) =>
             handleSelectionChange(event.value as Artwork[] | Artwork | null)
           }
